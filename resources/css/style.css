@@ -1,0 +1,155 @@
+/* Universal Styles */
+body{
+  font-size: 16px;
+}
+
+.flex-box {
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+hr {
+  height: 12px;
+  border: 0;
+  box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+}
+
+/* Header Styles */
+header {
+  border-bottom: 1px solid black;
+  width: 100%;
+  align-items: center;
+  height: auto;
+}
+
+header img{
+  height: 46px;
+  margin: 5px 0px 5px 15px;
+}
+
+ul.desktop {
+  flex-grow: 1;
+  text-align: right;
+  list-style-type: none;
+  padding-right: 15px;
+  height: 100%;
+  margin: 0;
+}
+
+.desktop li {
+  display: inline;
+  padding: 20px 20px;
+}
+
+/* Cover Styles */
+.cover {
+  background-image: url("../images/lmc_front_sign.jpg");
+  height: 400px;
+  background-size: 100% 100%;
+}
+
+.overlay {
+  background-color: #CBCBCB; opacity: 0.9;
+  position: relative;
+  width:35%;
+  top: 275px;
+  left: 70%;
+  padding: 5px 0px 5px 5px;
+}
+
+.overlay h2{
+  margin-top: 10px;
+}
+
+/* Featured Styles */
+.feature-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.featured h2 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.item {
+  min-width:30%;
+  /*min-width: 150px; */
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px 20px;
+}
+
+.item img {
+  height: 150px;
+  width: 150px;
+  margin: auto;
+}
+
+.item span {
+  font-weight: bold;
+  text-align: center;
+}
+/* Callout Styles */
+.callout {
+  margin-top: 60px;
+  height: 250px;
+  background-image: url("../images/lmc_ext_blur_500.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  opacity: 0.8;
+}
+
+.callout .container {
+  position: relative;
+  top: 20px;
+}
+
+.callout .message {
+  margin:auto;
+  /* background-color: rgba(203, 203, 203, 0.3)*/
+}
+
+.message h4{
+  text-align: center;
+  color: black;
+  margin-top: 15px;
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 4px 4px 5px #CBCBCB;
+}
+
+
+/* Contact Styles */
+.contact .container{
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* Industries Styles */
+.industries {
+  margin-top: 75px;
+  width: 100%;
+  text-align: center;
+}
+
+.industry-box {
+  margin-top:60px;
+}
+
+
+
+/* Footer Styles */
+footer {
+  height: 75px;
+  background-color: #0D4F8B;
+  color: white;
+  margin-top: 50px;
+  padding: 25px 0px 25px 30px;
+}
+
+footer span {
+  font-size: 12px;
+}
