@@ -153,12 +153,19 @@ ul.desktop .active {
   margin-bottom: 25px;
 }
 
-.contact button{
+.contact a{
   margin-bottom: 30px;
   background-color: #0D4F8B;
   color: white;
   border-radius: 8px;
   padding: 10px 20px;
+  border: 1px solid #CBCBCB;
+}
+
+.contact a:hover {
+  background-color: #CBCBCB;
+  color: #0D4F8B;
+  border: 1px solid #0D4F8B;
 }
 
 /* Industries Styles */
@@ -188,6 +195,10 @@ ul.desktop .active {
 
 .contact-info h2 {
   text-decoration: underline;
+}
+
+.contact-info a {
+  color: #0D4F8B;
 }
 
 .phone {
