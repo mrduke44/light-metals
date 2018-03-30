@@ -19,7 +19,11 @@ a{
   color: black;
 }
 
-/* Header Styles */
+.content {
+  text-align: center;
+}
+
+/* Desktop Header Styles */
 header {
   border-bottom: 1px solid black;
   width: 100%;
@@ -49,6 +53,13 @@ ul.desktop {
 ul.desktop .active {
   color: #0D4F8B;
 }
+
+/* Mobile Nav Styles */
+
+.mobile-nav{
+  display: none;
+}
+
 
 /* Page Title Styles */
 
@@ -136,6 +147,25 @@ ul.desktop .active {
   text-shadow: 4px 4px 5px #CBCBCB;
 }
 
+/* About Styles */
+
+.highlight {
+  height: 300px;
+  width: auto;
+}
+
+.intro {
+  padding: 20px 0px;
+}
+
+.quality h2{
+  padding-bottom:20px;
+}
+
+.quality a {
+  color: #0D4F8B;
+  text-decoration: underline;
+}
 
 /* Contact Styles */
 .contact .container{
