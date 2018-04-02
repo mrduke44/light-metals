@@ -21,11 +21,12 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
     <link href="./resources/images/logos/lmc_favicon.gif" type="image/gif" rel="icon">
+    <script src="./resources/javascript/javascript.js"></script>
   </head>
   <body>
     <!-- Header Content -->
     <header class="flex-box">
-        <img class="desktop logo" src="./resources/images/logos/lmc_custom.png" alt="light metals corp">
+        <img class="logo" src="./resources/images/logos/lmc_custom.png" alt="light metals corp">
         <ul class="desktop">
           <li><a href="#" class="active">Home</a></li>
           <li><a href="./about.html">About</a></li>
@@ -33,9 +34,20 @@
           <li><a href="./contact.html">Contact</a></li>
         </ul>
         <div class="mobile-nav">
-          <!-- TODO -->
+          <span onclick="openNav()">&#9776;</span>
         </div>
     </header>
+    <!-- Overlay Content -->
+    <div id="fullNav" class="screenOverlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./services.html">Services</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+    </div>
+
     <!-- Featured Content -->
     <div class="content">
       <div class="cover">

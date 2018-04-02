@@ -72,6 +72,47 @@ ul.desktop .active {
   display: none;
 }
 
+.mobile-nav span {
+  cursor: pointer;
+}
+
+/* Overlay Styles */
+
+.screenOverlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.screenOverlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #CBCBCB;
+    display: block;
+    transition: 0.3s;
+}
+
+.screenOverlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
 
 /* Page Title Styles */
 
@@ -161,8 +202,6 @@ ul.desktop .active {
 
 /* About Styles */
 
-
-
 .intro {
   padding: 20px 0px;
 }
@@ -240,8 +279,12 @@ ul.desktop .active {
   margin-top: 30px;
 }
 
-.map{
+.desktop.map{
   padding-left: 20px;
+}
+
+.mobile.map {
+  display:none;
 }
 
 .contact-info {
@@ -274,7 +317,7 @@ footer span {
   font-size: 12px;
 }
 
-/* Media Queries ipad */
+/* Media Queries lo-res or ipad */
 
 @media only screen and (max-width:1024px){
   .message h4 {
@@ -283,6 +326,48 @@ footer span {
   .callout{
     height: 200px;
   }
+
+  .service {
+    width: 90%;
+  }
 }
 
 /* Media Queries phone */
+
+@media only screen and (max-width:700px) {
+  ul.desktop {
+    display: none;
+  }
+
+  .overlay {
+    display: none;
+  }
+
+  .message h4{
+    font-size: 1.75rem;
+  }
+
+  .cover {
+    height: 200px;
+  }
+
+  .mobile-nav {
+    display: flex;
+    flex-grow: 1;
+  }
+
+  .mobile-nav span {
+    margin-left: auto;
+    margin-right: 10px;
+    font-size: 3rem;
+  }
+
+  .desktop.map{
+    display: none;
+  }
+
+  .mobile.map {
+    display: block;
+  }
+
+}

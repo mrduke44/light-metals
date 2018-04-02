@@ -21,6 +21,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
     <link href="./resources/images/logos/lmc_favicon.gif" type="image/gif" rel="icon">
+    <script src="./resources/javascript/javascript.js"></script>
   </head>
   <body>
     <!-- Header Content -->
@@ -32,10 +33,22 @@
           <li class="dropdn"><a href="./services.html">Services</a></li>
           <li><a href="#" class="active">Contact</a></li>
         </ul>
-        <div class="mobile nav">
-          <!-- TODO -->
+        <div class="mobile-nav">
+          <span onclick="openNav()">&#9776;</span>
         </div>
     </header>
+    <!-- Overlay Content -->
+    <div id="fullNav" class="screenOverlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./services.html">Services</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+    </div>
+
+    <!-- Contact Us Page Content -->
     <div class="content">
     <div class="container">
       <h1 class="title">Contact Us</h2>
@@ -53,8 +66,12 @@
             </div>
             <h3>Email us: <a href="mailto:sales@light-metals.com">sales@light-metals.com</a></h3>
           </div>
-          <div class="map">
+          <!-- Google Map-->
+          <div class="desktop map">
             <iframe width="450" height="400" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=light%20metals&zoom=8&key=AIzaSyBiyVMtbs8AWvtQRCj3WXYwVTTxFFXoSUs" allowfullscreen></iframe>
+          </div>
+          <div class="mobile map">
+            <iframe width="350" height="300" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=light%20metals&zoom=8&key=AIzaSyBiyVMtbs8AWvtQRCj3WXYwVTTxFFXoSUs" allowfullscreen></iframe> 
           </div>
         </div>
       </div>
