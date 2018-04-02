@@ -63,6 +63,7 @@ ul.desktop {
 
 ul.desktop .active {
   color: #0D4F8B;
+  text-decoration: underline;
 }
 
 /* Mobile Nav Styles */
