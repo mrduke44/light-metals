@@ -21,6 +21,14 @@ a{
 
 .content {
   text-align: center;
+  top: 57px;
+  position: relative;
+}
+
+.highlight {
+  height: auto;
+  width: 100%;
+  margin-top: 20px;
 }
 
 /* Desktop Header Styles */
@@ -29,6 +37,9 @@ header {
   width: 100%;
   align-items: center;
   height: auto;
+  position: fixed;
+  z-index: 1;
+  background-color: white;
 }
 
 header img{
@@ -149,10 +160,7 @@ ul.desktop .active {
 
 /* About Styles */
 
-.highlight {
-  height: 300px;
-  width: auto;
-}
+
 
 .intro {
   padding: 20px 0px;
@@ -209,6 +217,23 @@ ul.desktop .active {
   margin-top:60px;
 }
 
+/* Services Styles */
+
+.service {
+  text-align: left;
+  width: 45%;
+  margin: 20px 15px;
+}
+
+.service h3 {
+  text-decoration: underline;
+  color: #0D4F8B;
+}
+
+.service li {
+  font-size: 2rem;
+}
+
 /* Contact Us Styles */
 .contact-us{
   margin-top: 30px;
@@ -240,10 +265,23 @@ footer {
   height: 75px;
   background-color: #0D4F8B;
   color: white;
-  margin-top: 50px;
+  margin-top: 75px;
   padding: 25px 0px 25px 30px;
 }
 
 footer span {
   font-size: 12px;
 }
+
+/* Media Queries ipad */
+
+@media only screen and (max-width:1024px){
+  .message h4 {
+    font-size: 2rem;
+  }
+  .callout{
+    height: 200px;
+  }
+}
+
+/* Media Queries phone */
